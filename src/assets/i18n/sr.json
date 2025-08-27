@@ -1,1 +1,33 @@
-{}
+{
+  "header": {
+    "title": "Naturally Dance",
+    "description": "je plesni savez koji promoviše ples! Pripremamo učesnike za plesni podijum u opuštenoj i prijatnoj atmosferi.",
+    "readInSerbian": "pročitaj na srpskom"
+  },
+  "dances": {
+    "title": "Plesovi koje možete naučiti kod nas:",
+    "list": "Samba • Rumba • Cha Cha Cha • Engleski valcer • Bečki valcer • Fokstrot • Salsa • Bachata • Kizomba • Blues • Disko • Jive • R'n'R • Merengue • Sirtaki • Grupna koreografija i još mnogo toga! 😃"
+  },
+  "discoParty": {
+    "title": "Beogradska Disko Žurka - Belgrade Disco Fever",
+    "description": "Naturally Dance je tvorac i organizator Beogradske Disko Žurke - Belgrade Disco Fever Party 👉 najpopularnije DISKO žurke u Srbiji i na Balkanu!"
+  },
+  "kizomba": {
+    "title": "Prvi Kizomba Flash mob u Srbiji",
+    "description": "Naturally Dance je osmislio koreografiju i realizovao projekat Kizomba ples Flash mob - Beograd, Srbija kojim smo promovisali kulturu Afrike uz kulturu Srbije u Beogradu."
+  },
+  "teachers": {
+    "milos": {
+      "title": "Miloš Ćemalović, osnivač i plesni profesor Naturally Dance",
+      "description": "oduvek je bio veliki ljubitelj muzike, organizovao na stotine plesnih događaja na raznim mestima, bio DJ na plesnim žurkama, animirao ljude oko sebe kao i kreirao mikseve različite muzike."
+    },
+    "sandra": {
+      "title": "Sandra Svetlica Ćemalović, menadžer i plesni profesor Naturally Dance",
+      "description": "diplomirala je sociologiju na Filozofskom fakultetu Univerziteta u Beogradu. Celog života se interesovala za ples, a njen veliki talenat i ljubav prema plesu otkrio je Miloš 2015. godine."
+    }
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "rights": "Sva prava zadržana."
+  }
+}
