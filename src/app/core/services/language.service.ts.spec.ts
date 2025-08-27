@@ -1,16 +1,19 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing'
 
-import { LanguageServiceTs } from './language.service.ts';
+import { LanguageService } from './language.service'
 
-describe('LanguageServiceTs', () => {
-  let service: LanguageServiceTs;
+describe('LanguageService', () =>
+{
+  let service: LanguageService
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(LanguageServiceTs);
-  });
+  beforeEach(() =>
+  {
+    TestBed.configureTestingModule({})
+    service=TestBed.inject(LanguageService)
+  })
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+  it('should be created', () =>
+  {
+    expect(service).toBeTruthy()
+  })
+})

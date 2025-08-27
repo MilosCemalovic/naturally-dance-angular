@@ -4,7 +4,7 @@ import { TranslocoService } from '@jsverse/transloco'
 @Injectable({
   providedIn: 'root'
 })
-export class LanguageServiceTs
+export class LanguageService
 {
   constructor(private translocoService: TranslocoService) {}
 
@@ -25,8 +25,7 @@ export class LanguageServiceTs
     const defaultLanguage='en'
     // const languageToSet = savedLanguage || defaultLanguage
 
-    if (savedLanguage&&this.translocoService.isLang(savedLanguage))
-    {
+    if (savedLanguage&&this.translocoService.isLang(savedLanguage)) {
       // this.translocoService.setActiveLang(languageToSet)
       this.translocoService.setActiveLang(savedLanguage)
     }
