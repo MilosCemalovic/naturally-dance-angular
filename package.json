@@ -22,13 +22,15 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^20.2.0",
+    "@angular/common": "^20.2.1",
     "@angular/compiler": "^20.2.0",
     "@angular/core": "^20.2.0",
     "@angular/forms": "^20.2.0",
     "@angular/platform-browser": "^20.2.0",
     "@angular/router": "^20.2.0",
     "@jsverse/transloco": "^7.6.1",
+    "primeicons": "^7.0.0",
+    "primeng": "^20.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
