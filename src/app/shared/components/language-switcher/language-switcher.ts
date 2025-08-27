@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { TranslocoService } from '@jsverse/transloco'
 import { ButtonModule } from 'primeng/button'
-import { LanguageServiceTs } from '../../../core/services/language.service.ts'
+import { LanguageServiceTs } from '../../../core/services/language.service'
 
 @Component({
   selector: 'app-language-switcher',
