@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="section-title">
+    <h2>{{ 'dances.title' | transloco }}</h2>
+  </div>
+
+  <p-card>
+    <p class="text-center">{{ 'dances.list' | transloco }}</p>
+  </p-card>
+
+  <div class="grid">
+    <p-card *ngFor="let dance of dances$ | async" [header]="dance.name" styleClass="dance-card">
+      <p>{{ dance.description }}</p>
+      <p>Category: {{ dance.category }}</p>
+    </p-card>
+  </div>
+</div>
