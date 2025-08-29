@@ -2,10 +2,16 @@
   font-weight: bold;
   font-size: 1.2rem;
   color: #667eea;
+  margin-right: 1rem;
 }
 
 ::ng-deep .p-menubar {
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #e5e7eb;
+  padding: 0 1rem;
+
+  .p-menubar-root-list {
+    margin-right: auto;
+  }
 }

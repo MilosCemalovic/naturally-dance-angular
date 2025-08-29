@@ -1,11 +1,12 @@
 import { Component } from '@angular/core'
 import { MenubarModule } from 'primeng/menubar'
 import { TranslocoModule } from '@jsverse/transloco'
+import { LanguageSwitcher } from '../language-switcher/language-switcher'
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [MenubarModule, TranslocoModule],
+  imports: [MenubarModule, TranslocoModule, LanguageSwitcher],
   templateUrl: './navigation.html',
   styleUrls: ['./navigation.scss']
 })
