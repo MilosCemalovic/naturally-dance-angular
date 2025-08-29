@@ -1,4 +1,5 @@
 <div class="language-switcher">
-  <button pButton type="button" icon="pi pi-language" [label]="translocoService.getActiveLang() === 'en' ? 'SR' : 'EN'"
-    (click)="switchLanguage()" class="p-button-rounded p-button-text"></button>
+  <button pButton type="button" [icon]="translocoService.getActiveLang() === 'en' ? 'pi pi-flag-fill' : 'pi pi-flag'"
+    [label]="translocoService.getActiveLang() === 'en' ? 'EN' : 'SR'" (click)="switchLanguage()"
+    class="p-button-rounded p-button-text language-button"></button>
 </div>
