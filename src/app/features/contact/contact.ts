@@ -12,7 +12,6 @@ import { TextareaModule } from 'primeng/textarea'
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })
-export class Contact
-{
+export class Contact {
 
 }

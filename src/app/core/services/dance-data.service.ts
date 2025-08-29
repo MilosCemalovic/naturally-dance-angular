@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { BehaviorSubject, catchError, map, Observable, of, tap } from 'rxjs'
 
-export interface DanceStyle
-{
+export interface DanceStyle {
   id: number
   name: string
   category: string
@@ -14,16 +13,14 @@ export interface DanceStyle
   providedIn: 'root'
 })
 
-export class DanceDataService
-{
-  private dancesSubject=new BehaviorSubject<DanceStyle[]>([])
-  public dances$=this.dancesSubject.asObservable()
+export class DanceDataService {
+  private dancesSubject = new BehaviorSubject<DanceStyle[]>([])
+  public dances$ = this.dancesSubject.asObservable()
 
   constructor(private http: HttpClient) {}
 
-  loadDances (): Observable<DanceStyle[]>
-  {
-    const staticDances: DanceStyle[]=[
+  loadDances (): Observable<DanceStyle[]> {
+    const staticDances: DanceStyle[] = [
       {
         id: 1,
         name: 'Samba',
@@ -118,26 +115,23 @@ export class DanceDataService
 
     return of(staticDances).pipe(
       tap(dances => this.dancesSubject.next(dances)),
-      catchError(error =>
-      {
+      catchError(error => {
         console.error('Error loading dances:', error)
         return of([])
       })
     )
   }
 
-  getDanceById (id: number): Observable<DanceStyle|undefined>
-  {
+  getDanceById (id: number): Observable<DanceStyle | undefined> {
     return this.dances$.pipe(
-      map(dances => dances.find(dance => dance.id===id)
+      map(dances => dances.find(dance => dance.id === id)
       )
     )
   }
 
-  filterDancesByCategory (category: string): Observable<DanceStyle[]>
-  {
+  filterDancesByCategory (category: string): Observable<DanceStyle[]> {
     return this.dances$.pipe(
-      map(dances => dances.filter(dance => dance.category.toLowerCase()===category.toLowerCase())
+      map(dances => dances.filter(dance => dance.category.toLowerCase() === category.toLowerCase())
       )
     )
   }

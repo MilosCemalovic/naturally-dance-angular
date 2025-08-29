@@ -10,9 +10,8 @@ import { LanguageSwitcher } from '../language-switcher/language-switcher'
   templateUrl: './navigation.html',
   styleUrls: ['./navigation.scss']
 })
-export class Navigation
-{
-  items=[
+export class Navigation {
+  items = [
     { label: 'Home', icon: 'pi pi-home', routerLink: '/' },
     { label: 'About Us', icon: 'pi pi-info-circle', routerLink: '/about' },
     { label: 'Events', icon: 'pi pi-calendar', routerLink: '/events' },

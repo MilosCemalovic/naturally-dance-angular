@@ -9,7 +9,6 @@ import { Footer } from './shared/components/footer/footer'
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App
-{
-  protected readonly title=signal('naturally-dance');
+export class App {
+  protected readonly title = signal('naturally-dance');
 }

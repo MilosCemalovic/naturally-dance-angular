@@ -4,26 +4,21 @@ import { TranslocoService } from '@jsverse/transloco'
 @Injectable({
   providedIn: 'root'
 })
-export class LanguageService
-{
+export class LanguageService {
   constructor(private translocoService: TranslocoService) {}
 
-  switchLanguage (language: string)
-  {
+  switchLanguage (language: string) {
     this.translocoService.setActiveLang(language)
     localStorage.setItem('preferredLanguage', language)
-    // Remove the page reload - Transloco will handle the change automatically
   }
 
-  getCurrentLanguage (): string
-  {
+  getCurrentLanguage (): string {
     return this.translocoService.getActiveLang()
   }
 
-  initializeLanguage ()
-  {
-    const savedLanguage=localStorage.getItem('preferredLanguage')
-    if (savedLanguage&&this.translocoService.isLang(savedLanguage)) {
+  initializeLanguage () {
+    const savedLanguage = localStorage.getItem('preferredLanguage')
+    if (savedLanguage && this.translocoService.isLang(savedLanguage)) {
       this.translocoService.setActiveLang(savedLanguage)
     }
   }

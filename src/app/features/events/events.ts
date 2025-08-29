@@ -9,7 +9,6 @@ import { CardModule } from 'primeng/card'
   templateUrl: './events.html',
   styleUrl: './events.scss'
 })
-export class Events
-{
+export class Events {
 
 }

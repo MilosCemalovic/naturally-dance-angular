@@ -9,7 +9,6 @@ import { CardModule } from 'primeng/card'
   templateUrl: './about.html',
   styleUrl: './about.scss'
 })
-export class About
-{
+export class About {
 
 }

@@ -13,20 +13,17 @@ import { CommonModule } from '@angular/common'
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
-export class Home implements OnInit
-{
+export class Home implements OnInit {
   dances$: Observable<any>
 
   constructor(
     private danceDataService: DanceDataService,
     public translocoService: TranslocoService
-  )
-  {
-    this.dances$=this.danceDataService.dances$
+  ) {
+    this.dances$ = this.danceDataService.dances$
   }
 
-  ngOnInit ()
-  {
+  ngOnInit () {
     this.danceDataService.loadDances().subscribe()
   }
 }

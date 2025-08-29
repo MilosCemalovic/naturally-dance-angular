@@ -9,13 +9,11 @@ import { LanguageService } from '../../../core/services/language.service'
   templateUrl: './language-switcher.html',
   styleUrl: './language-switcher.scss'
 })
-export class LanguageSwitcher
-{
+export class LanguageSwitcher {
   constructor(public translocoService: TranslocoService, private languageService: LanguageService) {}
 
-  switchLanguage ()
-  {
-    const newLang=this.translocoService.getActiveLang()==='en'? 'sr':'en'
+  switchLanguage () {
+    const newLang = this.translocoService.getActiveLang() === 'en' ? 'sr' : 'en'
     this.languageService.switchLanguage(newLang)
   }
 
