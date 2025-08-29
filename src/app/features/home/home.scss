@@ -45,3 +45,35 @@
   font-size: 1.2rem;
   line-height: 1.6;
 }
+
+// Add dance category icons or background images
+:host ::ng-deep {
+  .dance-card[header='Samba'] {
+    border-top: 4px solid #e74c3c;
+  }
+
+  .dance-card[header='Rumba'] {
+    border-top: 4px solid #3498db;
+  }
+
+  .dance-card[header='Cha Cha Cha'] {
+    border-top: 4px solid #f39c12;
+  }
+
+  // Add more dance-specific styles as needed
+}
+
+// Mobile optimization
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+}

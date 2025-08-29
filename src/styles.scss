@@ -1,0 +1,52 @@
+/* Global image styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* PrimeNG card enhancements */
+:root {
+  --card-border-radius: 12px;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.p-card {
+  border-radius: var(--card-border-radius) !important;
+  box-shadow: var(--card-shadow) !important;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+.p-card-header {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #2c3e50 !important;
+  padding: 1.5rem 1.5rem 0.5rem !important;
+}
+
+.p-card-content {
+  padding: 1.5rem !important;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  :root {
+    --card-border-radius: 8px;
+  }
+
+  .p-card-header {
+    font-size: 1.25rem !important;
+    padding: 1rem 1rem 0.5rem !important;
+  }
+
+  .p-card-content {
+    padding: 1rem !important;
+  }
+}
