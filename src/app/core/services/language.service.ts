@@ -12,9 +12,7 @@ export class LanguageService
   {
     this.translocoService.setActiveLang(language)
     localStorage.setItem('preferredLanguage', language)
-
-    // Reload the page to ensure all content is translated
-    window.location.reload()
+    // Remove the page reload - Transloco will handle the change automatically
   }
 
   getCurrentLanguage (): string
