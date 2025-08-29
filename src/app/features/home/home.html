@@ -9,8 +9,8 @@
 
   <div class="grid">
     <p-card *ngFor="let dance of dances$ | async" [header]="dance.name" styleClass="dance-card">
+      <p class="category">{{ dance.category }}</p>
       <p>{{ dance.description }}</p>
-      <p>Category: {{ dance.category }}</p>
     </p-card>
   </div>
 </div>
