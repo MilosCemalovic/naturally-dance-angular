@@ -1,8 +1,7 @@
-.logo-text {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #667eea;
+.logo-image {
+  height: 50px;
   margin-right: 1rem;
+  object-fit: contain;
 }
 
 ::ng-deep .p-menubar {
@@ -13,5 +12,12 @@
 
   .p-menubar-root-list {
     margin-right: auto;
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .logo-image {
+    height: 40px;
   }
 }
