@@ -44,69 +44,69 @@ export class DanceDataService {
       },
       {
         id: 4,
-        name: 'English Waltz',
-        category: 'Ballroom',
-        descriptionKey: 'dancesList.englishWaltz.description'
-      },
-      {
-        id: 5,
-        name: 'Viennese Waltz',
-        category: 'Ballroom',
-        descriptionKey: 'dancesList.vienneseWaltz.description'
-      },
-      {
-        id: 6,
-        name: 'Foxtrot',
-        category: 'Ballroom',
-        descriptionKey: 'dancesList.foxtrot.description'
-      },
-      {
-        id: 7,
-        name: 'Salsa',
-        category: 'Caribbean',
-        descriptionKey: 'dancesList.salsa.description'
-      },
-      {
-        id: 8,
-        name: 'Bachata',
-        category: 'Caribbean',
-        descriptionKey: 'dancesList.bachata.description'
-      },
-      {
-        id: 9,
-        name: 'Kizomba',
-        category: 'African',
-        descriptionKey: 'dancesList.kizomba.description'
-      },
-      {
-        id: 10,
-        name: 'Blues',
-        category: 'Social',
-        descriptionKey: 'dancesList.blues.description'
-      },
-      {
-        id: 11,
-        name: 'Disco',
-        category: 'Social',
-        descriptionKey: 'dancesList.disco.description'
-      },
-      {
-        id: 12,
         name: 'Jive',
         category: 'Latin',
         descriptionKey: 'dancesList.jive.description'
       },
       {
-        id: 13,
-        name: 'R\'n\'R',
-        category: 'Rock',
-        descriptionKey: 'dancesList.rnr.description'
+        id: 5,
+        name: 'English Waltz',
+        category: 'Ballroom',
+        descriptionKey: 'dancesList.englishWaltz.description'
       },
       {
-        id: 14,
+        id: 6,
+        name: 'Viennese Waltz',
+        category: 'Ballroom',
+        descriptionKey: 'dancesList.vienneseWaltz.description'
+      },
+      {
+        id: 7,
+        name: 'Foxtrot',
+        category: 'Ballroom',
+        descriptionKey: 'dancesList.foxtrot.description'
+      },
+      {
+        id: 8,
+        name: 'Salsa',
+        category: 'Caribbean',
+        descriptionKey: 'dancesList.salsa.description'
+      },
+      {
+        id: 9,
+        name: 'Bachata',
+        category: 'Caribbean',
+        descriptionKey: 'dancesList.bachata.description'
+      },
+      {
+        id: 10,
         name: 'Merengue',
         category: 'Caribbean',
         descriptionKey: 'dancesList.merengue.description'
+      },
+      {
+        id: 11,
+        name: 'Kizomba',
+        category: 'African',
+        descriptionKey: 'dancesList.kizomba.description'
+      },
+      {
+        id: 12,
+        name: 'Blues',
+        category: 'Social',
+        descriptionKey: 'dancesList.blues.description'
+      },
+      {
+        id: 13,
+        name: 'Disco',
+        category: 'Social',
+        descriptionKey: 'dancesList.disco.description'
+      },
+      {
+        id: 14,
+        name: 'R\'n\'R',
+        category: 'Rock',
+        descriptionKey: 'dancesList.rnr.description'
       },
       {
         id: 15,
