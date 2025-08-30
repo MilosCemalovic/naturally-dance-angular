@@ -42,6 +42,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "outputHashing": "media",
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true

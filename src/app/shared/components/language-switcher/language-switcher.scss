@@ -2,12 +2,38 @@
   display: flex;
   align-items: center;
 
-  .language-button {
-    margin-left: 1rem;
-    font-weight: bold;
+  ::ng-deep {
+    .p-dropdown {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
 
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.1) !important;
+      .p-dropdown-label {
+        padding: 0.5rem;
+      }
+
+      .p-dropdown-trigger {
+        width: 2rem;
+      }
+    }
+
+    // Style for the flag icons
+    .fi {
+      width: 20px;
+      height: 15px;
+      border-radius: 2px;
+    }
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .language-switcher {
+    ::ng-deep .p-dropdown {
+      min-width: 120px !important;
+
+      .p-dropdown-label {
+        font-size: 0.875rem;
+      }
     }
   }
 }
