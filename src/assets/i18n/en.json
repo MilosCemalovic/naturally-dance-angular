@@ -80,6 +80,9 @@
       "description": "graduated in Sociology at the Faculty of Philosophy, University of Belgrade. All her life she was interested in dance, and her great talent and love for dance was discovered by Miloš in 2015."
     }
   },
+  "name": "Name",
+  "message": "Message",
+  "sendMessage": "Send Message",
   "footer": {
     "contact": "Contact",
     "rights": "All rights reserved."

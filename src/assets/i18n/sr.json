@@ -80,6 +80,9 @@
       "description": "diplomirala je sociologiju na Filozofskom fakultetu Univerziteta u Beogradu. Celog života se interesovala za ples, a njen veliki talenat i ljubav prema plesu otkrio je Miloš 2015. godine."
     }
   },
+  "name": "Ime",
+  "message": "Poruka",
+  "sendMessage": "Pošalji poruku",
   "footer": {
     "contact": "Kontakt",
     "rights": "Sva prava zadržana."
