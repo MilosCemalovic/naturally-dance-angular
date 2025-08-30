@@ -8,6 +8,7 @@ export class LanguageService {
   constructor(private translocoService: TranslocoService) {}
 
   switchLanguage (language: string) {
+    console.log('Switching language to:', language)
     this.translocoService.setActiveLang(language)
     localStorage.setItem('preferredLanguage', language)
   }
