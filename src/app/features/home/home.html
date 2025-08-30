@@ -9,7 +9,7 @@
 
   <div class="grid">
     <p-card *ngFor="let dance of dances$ | async" [header]="dance.name" styleClass="dance-card">
-      <p class="category">{{ dance.category }}</p>
+      <p class="category">{{ 'category' | transloco }} - {{ dance.category }}</p>
       <p>{{ dance.descriptionKey | transloco }}</p>
     </p-card>
   </div>

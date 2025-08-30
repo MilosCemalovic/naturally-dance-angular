@@ -5,6 +5,7 @@
     "events": "Events",
     "contact": "Contact"
   },
+  "category": "Category",
   "dancesList": {
     "samba": {
       "description": "A lively Brazilian dance with African roots, characterized by rapid steps and rhythmic hip movements"

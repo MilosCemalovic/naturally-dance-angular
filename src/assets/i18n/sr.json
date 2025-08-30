@@ -5,6 +5,7 @@
     "events": "Događaji",
     "contact": "Kontakt"
   },
+  "category": "Kategorija",
   "dancesList": {
     "samba": {
       "description": "Živahan brazilski ples sa afričkim korenima, karakterišu ga brzi koraci i ritmički pokreti kukova"
