@@ -7,7 +7,7 @@ export interface DanceStyle {
   id: number
   name: string
   category: string
-  descriptionKey: string // Change from description to descriptionKey
+  descriptionKey: string
 }
 
 @Injectable({
