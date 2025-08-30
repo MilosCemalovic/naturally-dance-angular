@@ -1,4 +1,57 @@
 {
+  "navigation": {
+    "home": "Početna",
+    "about": "O Nama",
+    "events": "Događaji",
+    "contact": "Kontakt"
+  },
+  "dancesList": {
+    "samba": {
+      "description": "Živahan brazilski ples sa afričkim korenima, karakterišu ga brzi koraci i ritmički pokreti kukova"
+    },
+    "rumba": {
+      "description": "Spor, romantičan kubanski ples koji se često naziva 'plesom ljubavi'"
+    },
+    "chaChaCha": {
+      "description": "Razigran, koketan ples kubanskog porekla, karakterišu ga sinkopirani koraci"
+    },
+    "englishWaltz": {
+      "description": "Glatki, elegantan ples u salonskom ritmu u 3/4 taktu sa dugim, tečnim pokretima"
+    },
+    "vienneseWaltz": {
+      "description": "Brža verzija valcera sa kontinuiranim okretima i rotacionim pokretima"
+    },
+    "foxtrot": {
+      "description": "Glatki, progresivni ples karakterisan dugim, kontinuiranim tečnim pokretima"
+    },
+    "salsa": {
+      "description": "Živahan partnerski ples sa kubanskim i portorikanskim korenima, sa složenim obrascima okreta"
+    },
+    "bachata": {
+      "description": "Romantičan ples iz Dominikanske Republike sa jednostavnim koracima i senzualnim pokretima kukova"
+    },
+    "kizomba": {
+      "description": "Senzualan, glatki partnerski ples iz Angole sa bliskom vezom i suptilnim pokretima"
+    },
+    "blues": {
+      "description": "Spor, izražajni ples fokusiran na muzikalnost i vezu između partnera"
+    },
+    "disco": {
+      "description": "Ples stil sa visokom energijom popularizovan 1970-ih sa upadljivim pokretima i ritmičkim koracima"
+    },
+    "jive": {
+      "description": "Energetičan ples baziran na swing-u sa brzim udarcima i trzajima"
+    },
+    "rnr": {
+      "description": "Rok en rol ples sa akrobatskim elementima i živahnim pokretima"
+    },
+    "merengue": {
+      "description": "Jednostavan, zabavan ples iz Dominikanske Republike sa marširajućim ritmom"
+    },
+    "sirtaki": {
+      "description": "Popularni grčki ples koji počinje sporo i postepeno ubrzava"
+    }
+  },
   "header": {
     "title": "Naturally Dance",
     "description": "je plesni savez koji promoviše ples! Pripremamo učesnike za plesni podijum u opuštenoj i prijatnoj atmosferi.",

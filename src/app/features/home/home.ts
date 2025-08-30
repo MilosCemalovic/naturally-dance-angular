@@ -18,12 +18,16 @@ export class Home implements OnInit {
 
   constructor(
     private danceDataService: DanceDataService,
-    public translocoService: TranslocoService
+    private translocoService: TranslocoService
   ) {
     this.dances$ = this.danceDataService.dances$
   }
 
   ngOnInit () {
     this.danceDataService.loadDances().subscribe()
+  }
+
+  getTranslatedDescription (dance: any): string {
+    return this.translocoService.translate(dance.descriptionKey)
   }
 }

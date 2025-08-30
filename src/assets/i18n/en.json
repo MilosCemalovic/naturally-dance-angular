@@ -1,4 +1,57 @@
 {
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "dancesList": {
+    "samba": {
+      "description": "A lively Brazilian dance with African roots, characterized by rapid steps and rhythmic hip movements"
+    },
+    "rumba": {
+      "description": "A slow, romantic Cuban dance often called the 'dance of love'"
+    },
+    "chaChaCha": {
+      "description": "A playful, flirtatious dance with Cuban origins, characterized by its syncopated steps"
+    },
+    "englishWaltz": {
+      "description": "A smooth, elegant ballroom dance in 3/4 time with long, flowing movements"
+    },
+    "vienneseWaltz": {
+      "description": "A faster version of the waltz with continuous turns and rotational movements"
+    },
+    "foxtrot": {
+      "description": "A smooth, progressive dance characterized by long, continuous flowing movements"
+    },
+    "salsa": {
+      "description": "A lively partner dance with Cuban and Puerto Rican roots, featuring intricate turn patterns"
+    },
+    "bachata": {
+      "description": "A romantic dance from the Dominican Republic with simple steps and sensual hip motion"
+    },
+    "kizomba": {
+      "description": "A sensual, smooth partner dance from Angola with close connection and subtle movements"
+    },
+    "blues": {
+      "description": "A slow, expressive dance focused on musicality and connection between partners"
+    },
+    "disco": {
+      "description": "A high-energy dance style popularized in the 1970s with flashy moves and rhythmic steps"
+    },
+    "jive": {
+      "description": "An energetic dance based on swing with fast kicks and flicks"
+    },
+    "rnr": {
+      "description": "Rock and Roll dance with acrobatic elements and lively movements"
+    },
+    "merengue": {
+      "description": "A simple, fun dance from the Dominican Republic with a marching rhythm"
+    },
+    "sirtaki": {
+      "description": "A popular Greek dance that starts slow and gradually increases in pace"
+    }
+  },
   "header": {
     "title": "Naturally Dance",
     "description": "is a dance association that promotes dance! We prepare participants for the dance floor in a relaxed and pleasant atmosphere.",
