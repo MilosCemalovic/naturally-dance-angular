@@ -21,6 +21,66 @@
 
 .card-text {
   flex: 1;
+  width: 100%;
+}
+
+// BEM implementation for social links
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #495057;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #e9ecef;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+
+  // Modifiers for different social platforms
+  &__link--facebook:hover {
+    color: #3b5998;
+
+    .social-links__icon {
+      color: #3b5998;
+    }
+  }
+
+  &__link--instagram:hover {
+    color: #e4405f;
+
+    .social-links__icon {
+      color: #e4405f;
+    }
+  }
+
+  &__link--youtube:hover {
+    color: #ff0000;
+
+    .social-links__icon {
+      color: #ff0000;
+    }
+  }
 }
 
 // Desktop layout
@@ -38,6 +98,10 @@
   :host ::ng-deep .p-card:nth-child(even) .card-content {
     flex-direction: row-reverse;
   }
+
+  .social-links {
+    justify-content: flex-start;
+  }
 }
 
 // Mobile optimization
@@ -48,5 +112,14 @@
 
   .event-image {
     max-width: 100%;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-links__link {
+    justify-content: center;
   }
 }
