@@ -42,7 +42,7 @@ export class Navigation implements OnInit, OnDestroy {
     // Use a try-catch to handle any translation errors
     try {
       const currentLang = this.translocoService.getActiveLang()
-      console.log('Updating navigation for language:', currentLang)
+      console.log('Updating navigation for language - log from Navigation component:', currentLang)
 
       this.items = [
         {

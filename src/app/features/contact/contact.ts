@@ -37,7 +37,7 @@ export class Contact {
 
   onSubmit () {
     if (this.contactForm.valid) {
-      console.log('Form submitted:', this.contactForm.value)
+      console.log('Form submitted - log from contact component.ts:', this.contactForm.value)
       // Here you would typically send the form data to your backend
       alert('Message sent successfully!')
       this.contactForm.reset()
