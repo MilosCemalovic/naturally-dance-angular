@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core'
-import { HttpClient } from '@angular/common/http'
 import { BehaviorSubject, catchError, map, Observable, of, tap } from 'rxjs'
-import { TranslocoService } from '@jsverse/transloco'
 
 export interface DanceStyle {
   id: number
@@ -17,10 +15,7 @@ export class DanceDataService {
   private dancesSubject = new BehaviorSubject<DanceStyle[]>([]);
   public dances$ = this.dancesSubject.asObservable();
 
-  constructor(
-    private http: HttpClient,
-    private translocoService: TranslocoService
-  ) {}
+  constructor() {}
 
   loadDances (): Observable<DanceStyle[]> {
     const staticDances: DanceStyle[] = [
@@ -135,10 +130,5 @@ export class DanceDataService {
     return this.dances$.pipe(
       map(dances => dances.filter(dance => dance.category === category))
     )
-  }
-
-  // Helper method to get translated description
-  getTranslatedDescription (dance: DanceStyle): string {
-    return this.translocoService.translate(dance.descriptionKey)
   }
 }
