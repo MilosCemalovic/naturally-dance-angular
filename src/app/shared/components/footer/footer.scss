@@ -1,13 +1,32 @@
+// Prevent horizontal scroll on the entire page
+body {
+  overflow-x: hidden;
+}
+
 .footer {
   background-color: #2c3e50;
   color: white;
   padding: 2rem 0;
   margin-top: auto;
 
+  // Initial state for animation
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease-out;
+
+  // Animated state
+  &.animate {
+    opacity: 1;
+    visibility: visible;
+    animation: slideInFromRight 0.8s ease-out forwards;
+  }
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    // Ensure container doesn't cause overflow
+    box-sizing: border-box;
   }
 
   h3 {
@@ -17,5 +36,44 @@
 
   p {
     margin: 0.5rem 0;
+  }
+
+  // Style for the clickable links
+  .footer-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #1abc9c;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Keyframes animation
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .footer-link {
+      // Ensure links are easily tappable on mobile
+      display: inline-block;
+      padding: 0.25rem 0;
+    }
   }
 }
