@@ -22,8 +22,10 @@
   margin-top: 2rem;
 }
 
+// Set a fixed height for all cards
 .dance-card {
-  height: 100%;
+  height: 380px; // Fixed height that should work for most content
+  display: block;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -31,6 +33,22 @@
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Ensure the PrimeNG card content fits properly
+::ng-deep .p-card {
+  height: 100%;
+
+  .p-card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-card-content {
+    flex: 1;
+    overflow: hidden;
   }
 }
 
@@ -54,6 +72,11 @@
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .dance-card {
+    height: auto; // Allow natural height on mobile
+    min-height: 300px;
   }
 
   .section-title h2 {
