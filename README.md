@@ -38,4 +38,21 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## About the Project
 
-- This is Naturally Dance Belgrade project using Angular 19, PrimeNG and Transloco i18n for English-Serbian localization
+This is Naturally Dance Belgrade project using:
+
+- Angular v19
+- PrimeNG v19
+- Prime icons
+- Flag icons
+- Routes from @angular/router
+- Lazy loading
+- Services
+- RxJS
+- Transloco i18n for English-Serbian localization
+
+## PrimeNG components
+
+- Menubar
+- Dropdown
+- Card
+- Button
