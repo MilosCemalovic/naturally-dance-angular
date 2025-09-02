@@ -6,13 +6,5 @@
     <ng-template pTemplate="end">
       <app-language-switcher></app-language-switcher>
     </ng-template>
-
-    <!-- Use translation keys directly with transloco pipe -->
-    <ng-template let-item pTemplate="item">
-      <div class="menu-item">
-        <i [class]="item.icon" *ngIf="item.icon"></i>
-        <span class="ml-2">{{ item.translationKey | transloco }}</span>
-      </div>
-    </ng-template>
   </p-menubar>
 </nav>
