@@ -2,6 +2,11 @@
 @import 'primeicons/primeicons.css';
 
 /* Global image styles */
+// Prevent horizontal scroll on the entire page
+body {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
