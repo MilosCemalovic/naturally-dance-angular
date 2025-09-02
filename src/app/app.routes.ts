@@ -10,8 +10,8 @@ export const routes: Routes = [
     loadChildren: () => import('./features/about/about.routes').then(m => m.ABOUT_ROUTES)
   },
   {
-    path: 'events',
-    loadChildren: () => import('./features/events/events.routes').then(m => m.EVENTS_ROUTES)
+    path: 'projects',
+    loadChildren: () => import('./features/projects/projects.routes').then(m => m.PROJECTS_ROUTES)
   },
   {
     path: 'contact',

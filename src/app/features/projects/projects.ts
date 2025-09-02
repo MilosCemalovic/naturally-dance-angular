@@ -3,12 +3,12 @@ import { TranslocoModule } from '@jsverse/transloco'
 import { CardModule } from 'primeng/card'
 
 @Component({
-  selector: 'app-events',
+  selector: 'app-projects',
   standalone: true,
   imports: [TranslocoModule, CardModule],
-  templateUrl: './events.html',
-  styleUrl: './events.scss'
+  templateUrl: './projects.html',
+  styleUrl: './projects.scss'
 })
-export class Events {
+export class Projects {
 
 }

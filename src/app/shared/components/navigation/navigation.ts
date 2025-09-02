@@ -56,9 +56,9 @@ export class Navigation implements OnInit, OnDestroy {
           routerLink: '/about'
         },
         {
-          label: this.translocoService.translate('navigation.events'),
+          label: this.translocoService.translate('navigation.projects'),
           icon: 'pi pi-calendar',
-          routerLink: '/events'
+          routerLink: '/projects'
         },
         {
           label: this.translocoService.translate('navigation.contact'),
@@ -72,7 +72,7 @@ export class Navigation implements OnInit, OnDestroy {
       this.items = [
         { label: 'Home', icon: 'pi pi-home', routerLink: '/' },
         { label: 'About Us', icon: 'pi pi-info-circle', routerLink: '/about' },
-        { label: 'Events', icon: 'pi pi-calendar', routerLink: '/events' },
+        { label: 'Projects', icon: 'pi pi-calendar', routerLink: '/projects' },
         { label: 'Contact', icon: 'pi pi-envelope', routerLink: '/contact' }
       ]
     }
