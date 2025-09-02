@@ -23,25 +23,8 @@
   }
 }
 
-.nav-end-content {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  .current-language {
-    font-size: 0.875rem;
-    color: #6b7280;
-  }
-}
-
 @media (max-width: 768px) {
   .logo-image {
     height: 40px;
-  }
-
-  .nav-end-content {
-    .current-language {
-      display: none; // Hide on mobile to save space
-    }
   }
 }
