@@ -1,8 +1,9 @@
-import { Component, OnInit, signal } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 import { Navigation } from './shared/components/navigation/navigation'
 import { Footer } from './shared/components/footer/footer'
 import { TranslocoService } from '@jsverse/transloco'
+import { LanguageService } from './core/services/language.service'
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,15 @@ import { TranslocoService } from '@jsverse/transloco'
   styleUrl: './app.scss'
 })
 export class App implements OnInit {
-  constructor(private translocoService: TranslocoService) {}
+  constructor(
+    private translocoService: TranslocoService,
+    private languageService: LanguageService
+  ) {}
 
   ngOnInit () {
+    // Initialize language from localStorage
+    this.languageService.initializeLanguage()
+
     // Check if translations are loading
     this.translocoService.selectTranslate('navigation.home').subscribe(translation => {
       console.log('Translation for navigation.home - log from app.ts:', translation)
