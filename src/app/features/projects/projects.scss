@@ -11,14 +11,6 @@
   align-items: center;
 }
 
-.event-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .card-text {
   flex: 1;
   width: 100%;
@@ -85,20 +77,6 @@
 
 // Desktop layout
 @media (min-width: 768px) {
-  .card-content {
-    flex-direction: row;
-    align-items: flex-start;
-
-    .event-image {
-      max-width: 400px;
-    }
-  }
-
-  // Alternate image position for even cards
-  :host ::ng-deep .p-card:nth-child(even) .card-content {
-    flex-direction: row-reverse;
-  }
-
   .social-links {
     justify-content: flex-start;
   }
@@ -106,14 +84,6 @@
 
 // Mobile optimization
 @media (max-width: 480px) {
-  .container {
-    padding: 1rem;
-  }
-
-  .event-image {
-    max-width: 100%;
-  }
-
   .social-links {
     flex-direction: column;
     gap: 0.5rem;

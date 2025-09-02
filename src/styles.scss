@@ -12,49 +12,40 @@ img {
   height: auto;
 }
 
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* PrimeNG card enhancements */
-:root {
-  --card-border-radius: 12px;
-  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
 
-.p-card {
-  border-radius: var(--card-border-radius) !important;
-  box-shadow: var(--card-shadow) !important;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  margin-bottom: 2rem;
+// Desktop layout
+@media (min-width: 768px) {
+  .card-content {
+    flex-direction: row !important;
+    align-items: flex-start !important;
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+    .image {
+      max-width: 400px;
+    }
+  }
+
+  // Alternate image position for even cards
+  :host ::ng-deep .p-card:nth-child(even) .card-content {
+    flex-direction: row-reverse;
   }
 }
 
-.p-card-header {
-  font-size: 1.5rem !important;
-  font-weight: 600 !important;
-  color: #2c3e50 !important;
-  padding: 1.5rem 1.5rem 0.5rem !important;
-}
-
-.p-card-content {
-  padding: 1.5rem !important;
-}
-
-/* Responsive breakpoints */
-@media (max-width: 768px) {
-  :root {
-    --card-border-radius: 8px;
+// Mobile optimization
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
   }
 
-  .p-card-header {
-    font-size: 1.25rem !important;
-    padding: 1rem 1rem 0.5rem !important;
-  }
-
-  .p-card-content {
-    padding: 1rem !important;
+  .image {
+    max-width: 100%;
   }
 }
