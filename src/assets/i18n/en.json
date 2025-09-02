@@ -2,8 +2,7 @@
   "navigation": {
     "home": "Home",
     "about": "About Us",
-    "projects": "Projects",
-    "contact": "Contact"
+    "projects": "Projects"
   },
   "category": "Category",
   "dancesList": {
