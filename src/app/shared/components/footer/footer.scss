@@ -4,18 +4,6 @@
   padding: 2rem 0;
   margin-top: auto;
 
-  // Initial state for animation
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.8s ease-out;
-
-  // Animated state
-  &.animate {
-    opacity: 1;
-    visibility: visible;
-    animation: slideInFromRight 0.8s ease-out forwards;
-  }
-
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -43,16 +31,6 @@
       color: #1abc9c;
       text-decoration: underline;
     }
-  }
-}
-
-// Keyframes animation
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 
